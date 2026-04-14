@@ -1,1 +1,3 @@
-type SecaoSite = "paginaInicial" | "todos" | "banho" | "mao" | "fragrancia" | "cabelo" | "pele" | "infantil";
+import { CategoriaType } from "./categoria.type";
+
+export type SecaoSiteType = "paginaInicial" | "todos" | CategoriaType;

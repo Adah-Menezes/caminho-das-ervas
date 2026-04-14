@@ -13,3 +13,12 @@
 }
 
 .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 0; }
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+.container {
+    background: #f9fbf7;
+    padding: 40px 20px;
+}

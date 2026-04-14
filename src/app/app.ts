@@ -4,6 +4,7 @@ import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inici
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
+import { SecaoSiteType } from './types/secao.type';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +15,9 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 })
 export class App {
   protected readonly title = signal('front-caminho-das-ervas');
-  paginaAtual: SecaoSite = "paginaInicial";
+  paginaAtual: SecaoSiteType = "paginaInicial";
 
-  onChangePaginaAtual(paginaAtual: SecaoSite){
+  onChangePaginaAtual(paginaAtual: SecaoSiteType){
     this.paginaAtual = paginaAtual;
   }
 }
